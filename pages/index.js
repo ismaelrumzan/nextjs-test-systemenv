@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
+  const myenv = process.env.VERCEL_ENV;
+  console.log(myenv);
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <h2>{process.env.NEXT_PUBLIC_ENV_VERCEL_ENV}</h2>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
