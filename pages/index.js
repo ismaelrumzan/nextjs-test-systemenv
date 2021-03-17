@@ -6,6 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
+        <h2>{process.env.NEXT_PUBLIC_ENV_VERCEL_ENV}</h2>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
